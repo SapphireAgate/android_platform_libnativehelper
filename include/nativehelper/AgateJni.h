@@ -60,7 +60,9 @@ void agateJniAddStringPolicy(JNIEnv* env);
 void agateJniAddArrayPolicy(JNIEnv* env, jobject obj, int tag);
 
 /* Get the identity of the logged in user */
-char* agateJniGetCertificate(JNIEnv* env);
+int agateJniGetCertificate(JNIEnv* env);
+
+void agateJniPrintPolicy(int tag);
 
 #ifdef __cplusplus
 }
