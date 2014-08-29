@@ -55,6 +55,11 @@ int agateJniDecodePolicy(JNIEnv* env, char* p);
 void agateJniAddSocketPolicy(JNIEnv* env, jobject fd, int tag);
 
 /*
+ * Removes policy from a socket
+ */
+void agateJniRemoveSocketPolicy(JNIEnv* env, jint fd);
+
+/*
  * Adds policy to a StringObject
  */
 void agateJniAddStringPolicy(JNIEnv* env);
